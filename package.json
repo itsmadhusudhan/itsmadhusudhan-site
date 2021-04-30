@@ -12,6 +12,7 @@
     "gatsby-plugin-offline": "^4.2.0",
     "gatsby-plugin-postcss": "^4.2.0",
     "gatsby-plugin-react-helmet": "^4.2.0",
+    "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sass": "^4.2.0",
     "gatsby-plugin-sharp": "^3.2.1",
     "gatsby-source-filesystem": "^3.2.0",
@@ -45,9 +46,10 @@
     "build": "gatsby build",
     "develop": "gatsby develop -p 3030",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "yarn run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "switch-node": "nvm use 12"
   },
   "repository": {
     "type": "git",

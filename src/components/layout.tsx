@@ -1,10 +1,12 @@
 import React from "react"
+import SEO from "./seo"
 
 type Props = {
   children: React.ReactNode
+  title?: string
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, title = "Madhusudhan" }: Props) => {
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {
   //     site {
@@ -17,9 +19,11 @@ const Layout = ({ children }: Props) => {
 
   return (
     <>
-      <div>
-        <main>{children}</main>
-      </div>
+      <SEO title={title} heading="Web Developer" />
+      <main className="h-screen px-4 mx-auto transition-all dark:bg-gray-800 dark:text-white">
+        {children}
+      </main>
+      {/* <footer>This is a footer</footer */}
     </>
   )
 }
